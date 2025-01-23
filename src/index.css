@@ -1,0 +1,194 @@
+.container{
+  padding: 10px 10px;
+  margin: auto;
+  display: flex;
+  gap:20px
+}
+.expense-list{
+  border: 2px solid rgb(5, 85, 135);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis:50%;
+}
+
+.expense-summary{
+  border: 2px solid rgb(5, 85, 135);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis:50%;
+
+}
+.btn{
+  padding: 10px 20px;
+  background-color: rgb(100, 149, 237);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: max-content;
+  border: 1px solid white
+}
+
+.add-expense{
+  border: 1px solid black;
+  padding: 10px 50px 30px;
+  margin: 0 0 10px 0;
+  z-index: 9999;
+  position: absolute;
+  top:50%;
+  left:50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  position: relative;
+  width: max-content
+}
+.form-element{
+  display: flex;
+  gap:10px;
+  margin: 5px 0px;
+}
+.form-element label{
+  width:100px
+}
+.form-element input{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 200px;
+}
+.form-element select{
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 222px
+
+}
+.form-btn{
+  display: flex;
+  justify-content: end;
+  margin:20px 0 0 0
+}
+
+th, td{
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  text-transform: capitalize;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.filter{
+display: inline-flex;
+gap:10px;
+align-items:center;
+}
+
+
+div .amount, .category, .date{
+  min-width: 200px;
+  max-width: max-content;
+  padding: 10px 15px 15px;
+  border-radius: 10px;
+  z-index: 50;
+  margin-top:2px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.btn-clear{
+  background-color: white;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+
+.btn-disabled{
+  background-color: darkgray;
+  cursor: default;
+}
+
+fieldset{
+  max-height: 200px;
+  overflow-y: scroll;
+  border: none;
+}
+legend{
+  font-weight: bold;
+
+}
+.radio-amount input, label{
+ margin: 5px 5px;
+ max-width: 50px
+
+}
+.radio-date input, label{
+ margin: 5px 5px;
+ max-width: 150px
+
+}
+
+.error{
+  color: red;
+}
+
+.action-btn{
+  display: flex;
+  justify-content: flex-end;
+  gap:5px
+}
+th{
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+svg{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.btn-filter-selected{
+  background-color: rgb(32, 102, 232);
+  font-weight: bold;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgb(0,0,0,0.6);
+  z-index:100;
+
+}
+.close-btn{
+  position: absolute;
+  top:10px;right: 10px;
+   border-radius: 100%;
+   border: 1px solid black;
+   padding: 4px 8px;
+   font-weight: bold;
+   cursor: pointer;
+   background-color: rgb(246, 245, 245);
+}
+.close-btn:hover{
+  background-color: rgb(223, 223, 223);
+}
+
