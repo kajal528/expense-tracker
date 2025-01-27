@@ -344,7 +344,7 @@ function Button({ onClick, children }) {
 function AddExpenseForm({ onAddExpense, expense, handleFormClose }) {
   const [amount, setAmount] = useState(expense?.amount ? expense.amount : "");
   const [category2, setCategory2] = useState(
-    expense?.category ? expense.category : ""
+    expense?.category ? expense.category : categories[0].category
   );
   const [date, setDate] = useState(expense?.date ? expense.date : "");
   const [description, setDescription] = useState(
