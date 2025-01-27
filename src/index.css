@@ -1,26 +1,26 @@
-.container{
+.container {
   padding: 10px 10px;
   margin: auto;
   display: flex;
-  gap:20px
+  gap: 20px;
+  flex-direction: column;
 }
-.expense-list{
+.expense-list {
   border: 2px solid rgb(5, 85, 135);
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
-  flex-basis:50%;
+  flex-basis: 50%;
 }
 
-.expense-summary{
+.expense-summary {
   border: 2px solid rgb(5, 85, 135);
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
-  flex-basis:50%;
-
+  flex-basis: 50%;
 }
-.btn{
+.btn {
   padding: 10px 20px;
   background-color: rgb(100, 149, 237);
   color: white;
@@ -29,51 +29,57 @@
   text-transform: uppercase;
   cursor: pointer;
   height: max-content;
-  border: 1px solid white
+  border: 1px solid white;
 }
 
-.add-expense{
+.show{
+ position: absolute;
+ right: 0;
+ margin-right: 10px;
+}
+
+.add-expense {
   border: 1px solid black;
   padding: 10px 50px 30px;
   margin: 0 0 10px 0;
   z-index: 9999;
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   background-color: white;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   position: relative;
-  width: max-content
+  width: max-content;
 }
-.form-element{
+.form-element {
   display: flex;
-  gap:10px;
+  gap: 10px;
   margin: 5px 0px;
 }
-.form-element label{
-  width:100px
+.form-element label {
+  width: 100px;
 }
-.form-element input{
+.form-element input {
   padding: 5px 10px;
   border-radius: 10px;
   border: 1px solid black;
   width: 200px;
 }
-.form-element select{
+.form-element select {
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 222px
-
+  width: 222px;
 }
-.form-btn{
+.form-btn {
   display: flex;
   justify-content: end;
-  margin:20px 0 0 0
+  margin: 20px 0 0 0;
 }
 
-th, td{
+th,
+td {
   padding: 10px 20px;
   border: 1px solid #dddddd;
   text-transform: capitalize;
@@ -85,27 +91,27 @@ table {
   margin: 20px 0;
   font-size: 18px;
   text-align: left;
-
 }
 
 th {
   background-color: #f2f2f2;
 }
 
-.filter{
-display: inline-flex;
-gap:10px;
-align-items:center;
+.filter {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
 }
 
-
-div .amount, .category, .date{
+div .amount,
+.category,
+.date {
   min-width: 200px;
   max-width: max-content;
   padding: 10px 15px 15px;
   border-radius: 10px;
   z-index: 50;
-  margin-top:2px;
+  margin-top: 2px;
   position: absolute;
   background-color: white;
   border: 1px solid black;
@@ -113,82 +119,170 @@ div .amount, .category, .date{
   flex-direction: column;
 }
 
-
-.btn-clear{
+.btn-clear {
   background-color: white;
   color: cornflowerblue;
   border: 1px solid cornflowerblue;
 }
 
-.btn-disabled{
+.btn-disabled {
   background-color: darkgray;
   cursor: default;
 }
 
-fieldset{
+fieldset {
   max-height: 200px;
   overflow-y: scroll;
   border: none;
 }
-legend{
+legend {
   font-weight: bold;
-
 }
-.radio-amount input, label{
- margin: 5px 5px;
- max-width: 50px
-
+.radio-amount input,
+label {
+  margin: 5px 5px;
+  max-width: 50px;
 }
-.radio-date input, label{
- margin: 5px 5px;
- max-width: 150px
-
+.radio-date input,
+label {
+  margin: 5px 5px;
+  max-width: 150px;
 }
 
-.error{
+.error {
   color: red;
 }
 
-.action-btn{
+.action-btn {
   display: flex;
   justify-content: flex-end;
-  gap:5px
+  gap: 5px;
 }
-th{
+th {
   position: relative;
   text-align: center;
   cursor: pointer;
 }
-svg{
+svg {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
 }
-.btn-filter-selected{
+.btn-filter-selected {
   background-color: rgb(32, 102, 232);
   font-weight: bold;
 }
-.overlay{
+.overlay {
   height: 100%;
   width: 100%;
   position: fixed;
-  top:0;
-  left:0;
-  background-color: rgb(0,0,0,0.6);
-  z-index:100;
-
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 100;
 }
-.close-btn{
+.close-btn {
   position: absolute;
-  top:10px;right: 10px;
-   border-radius: 100%;
-   border: 1px solid black;
-   padding: 4px 8px;
-   font-weight: bold;
-   cursor: pointer;
-   background-color: rgb(246, 245, 245);
+  top: 10px;
+  right: 10px;
+  border-radius: 100%;
+  border: 1px solid black;
+  padding: 4px 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(246, 245, 245);
 }
-.close-btn:hover{
+.close-btn:hover {
   background-color: rgb(223, 223, 223);
 }
+.signup {
+  width: 30rem;
+  height: 35rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  border: 5px solid rgba(65, 105, 225, 0.8);
+  border-radius: 10px;
+}
+.heading {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.form {
+  padding: 0 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.input {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  margin-bottom: 10px;
 
+}
+input{
+  padding:10px 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  
+}
+input:focus{
+  border: 2px solid black
+}
+.inputfield {
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.inputfield input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.submit input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgba(65, 105, 225, 0.8);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.link{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  margin-right: 20px;
+  
+}
+.error{
+  font-size:14px;
+  color: red;
+}
+.charts{
+display: flex;
+flex-wrap: wrap;
+}
+.highcharts{
+  width:50%;
+  margin-top:20px;
+}
